@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "NattyFancy.co",
-  description: "Your Thrifting Solution",
+  description: "All is fair in love and thrifting✨",
 };
 
 export default function RootLayout({

@@ -7,16 +7,19 @@ export default function Section1() {
       href: "https://www.instagram.com/nattyfancy.co/",
       label: "Instagram",
       logo: "/IG.png",
+      className: "rounded-md group-hover:animate-spin transition"
     },
     {
       href: "https://wa.me/+6283108871532",
       label: "Whatsapp 1",
       logo: "/WA.png",
+      className: "rounded-md group-hover:animate-spin transition"
     },
     {
       href: "https://wa.me/+6287886885788",
       label: "Whatsapp 2",
       logo: "/WA.png",
+      className: "rounded-md group-hover:animate-spin transition"
     },
   ];
 
@@ -40,10 +43,10 @@ export default function Section1() {
             href={link.href}
             rel="noopener norefferer"
             target="_blank"
-            className="flex items-center w-full py-3 px-5 text-white bg-gradient-to-r from-pink-800 to-red-800 rounded-full shadow-xl  transition"
+            className="flex group items-center w-full py-3 px-5 text-white bg-gradient-to-r from-pink-800 to-red-800 rounded-full shadow-xl  transition"
           >
             {" "}
-            <Image src={link.logo} alt="logo" width={50} height={50} className="rounded-md" />
+            <Image src={link.logo} alt="logo" width={50} height={50} className={link.className} />
             <span className="flex-1 text-lg font-medium transition hover:scale-105">{link.label}</span>
           </Link>
         ))}

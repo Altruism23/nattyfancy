@@ -11,7 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        beige: "#faf0e6"
       },
+      backgroundImage: {
+        'hero-pattern': "url('/NattyFancyBackground.jpg')"
+      }
     },
   },
   plugins: [],
